@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="1304" started-at="2017-03-15T19:04:51Z" finished-at="2017-03-15T19:04:52Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="1304" started-at="2017-03-15T19:04:51Z" finished-at="2017-03-15T19:04:52Z">
+      <class name="com.ooyala.test.MonthlyScenarioTest">
+        <test-method status="PASS" signature="testMonthlyScenario(java.lang.String, java.lang.String)[pri:0, instance:com.ooyala.test.MonthlyScenarioTest@6e8dacdf]" name="testMonthlyScenario" duration-ms="54" started-at="2017-03-16T00:34:51Z" data-provider="dp" finished-at="2017-03-16T00:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input1.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[output1.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMonthlyScenario -->
+        <test-method status="PASS" signature="testMonthlyScenario(java.lang.String, java.lang.String)[pri:0, instance:com.ooyala.test.MonthlyScenarioTest@6e8dacdf]" name="testMonthlyScenario" duration-ms="1234" started-at="2017-03-16T00:34:51Z" data-provider="dp" finished-at="2017-03-16T00:34:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input2.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[output2.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMonthlyScenario -->
+        <test-method status="PASS" signature="testMonthlyScenario(java.lang.String, java.lang.String)[pri:0, instance:com.ooyala.test.MonthlyScenarioTest@6e8dacdf]" name="testMonthlyScenario" duration-ms="0" started-at="2017-03-16T00:34:52Z" data-provider="dp" finished-at="2017-03-16T00:34:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input3.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[output3.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMonthlyScenario -->
+      </class> <!-- com.ooyala.test.MonthlyScenarioTest -->
+      <class name="com.ooyala.test.GcdTest">
+        <test-method status="PASS" signature="testGcd(java.util.List, int)[pri:0, instance:com.ooyala.test.GcdTest@7c30a502]" name="testGcd" duration-ms="16" started-at="2017-03-16T00:34:51Z" data-provider="dp" finished-at="2017-03-16T00:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[35, 49]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGcd -->
+        <test-method status="PASS" signature="testGcd(java.util.List, int)[pri:0, instance:com.ooyala.test.GcdTest@7c30a502]" name="testGcd" duration-ms="0" started-at="2017-03-16T00:34:51Z" data-provider="dp" finished-at="2017-03-16T00:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[23, 37]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGcd -->
+        <test-method status="PASS" signature="testGcd(java.util.List, int)[pri:0, instance:com.ooyala.test.GcdTest@7c30a502]" name="testGcd" duration-ms="0" started-at="2017-03-16T00:34:51Z" data-provider="dp" finished-at="2017-03-16T00:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[32356000, 2000000, 3500000]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGcd -->
+      </class> <!-- com.ooyala.test.GcdTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

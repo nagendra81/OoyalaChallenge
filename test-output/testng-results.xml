@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1193" started-at="2017-03-15T19:16:10Z" finished-at="2017-03-15T19:16:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1193" started-at="2017-03-15T19:16:10Z" finished-at="2017-03-15T19:16:11Z">
+      <class name="com.ooyala.test.MonthlyScenarioTest">
+        <test-method status="PASS" signature="testMonthlyScenario(java.lang.String, java.lang.String)[pri:0, instance:com.ooyala.test.MonthlyScenarioTest@59e84876]" name="testMonthlyScenario" duration-ms="104" started-at="2017-03-16T00:46:10Z" data-provider="dp" finished-at="2017-03-16T00:46:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input1.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[output1.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMonthlyScenario -->
+        <test-method status="PASS" signature="testMonthlyScenario(java.lang.String, java.lang.String)[pri:0, instance:com.ooyala.test.MonthlyScenarioTest@59e84876]" name="testMonthlyScenario" duration-ms="1010" started-at="2017-03-16T00:46:10Z" data-provider="dp" finished-at="2017-03-16T00:46:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input2.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[output2.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMonthlyScenario -->
+        <test-method status="PASS" signature="testMonthlyScenario(java.lang.String, java.lang.String)[pri:0, instance:com.ooyala.test.MonthlyScenarioTest@59e84876]" name="testMonthlyScenario" duration-ms="9" started-at="2017-03-16T00:46:11Z" data-provider="dp" finished-at="2017-03-16T00:46:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input3.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[output3.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMonthlyScenario -->
+      </class> <!-- com.ooyala.test.MonthlyScenarioTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
