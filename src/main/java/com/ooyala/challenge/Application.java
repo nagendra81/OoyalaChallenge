@@ -14,7 +14,7 @@ public class Application {
 
 			String result = scenario.formatResult(solution);
 			System.out.println(result);
-			
+
 		} catch (IOException e) {
 			System.err.println(e.getMessage());
 		}

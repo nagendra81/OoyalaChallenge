@@ -31,9 +31,14 @@ public class FileInputProvider {
 			String[] parts = line.split(",");
 
 			Validate.notNull(parts, "A Line in the input file cannot be null");
-			Validate.isTrue(parts.length == 3, "A line in the input file should contain exactly three comma separated parts");
+			Validate.isTrue(parts.length == 3,
+					"A line in the input file should contain exactly three comma separated parts");
+			
+			Validate.notBlank(parts[0]);
+			Validate.notBlank(parts[1]);
+			Validate.notBlank(parts[2]);
 
-			customers.add(new CustomerCampaign(parts[0], parseImpressions(parts[1]), parsePrice(parts[2])));
+			customers.add(new CustomerCampaign(parts[0].trim(), parseImpressions(parts[1]), parsePrice(parts[2])));
 		}
 
 		MonthlyScenario scenario = new MonthlyScenario(customers, inventory);
