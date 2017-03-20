@@ -14,9 +14,7 @@ public class FileInputProvider {
 
 	public FileInputProvider(String fileName) {
 		Validate.notBlank(fileName);
-
 		this.file = new File(fileName);
-
 		validateFileExists(file);
 	}
 
@@ -28,16 +26,7 @@ public class FileInputProvider {
 
 		for (int i = 1; i < fileContent.size(); i++) {
 			String line = fileContent.get(i);
-			String[] parts = line.split(",");
-
-			Validate.notNull(parts, "A Line in the input file cannot be null");
-			Validate.isTrue(parts.length == 3,
-					"A line in the input file should contain exactly three comma separated parts");
-			
-			Validate.notBlank(parts[0]);
-			Validate.notBlank(parts[1]);
-			Validate.notBlank(parts[2]);
-
+			String[] parts = extractLineParts(line);
 			customers.add(new CustomerCampaign(parts[0].trim(), parseImpressions(parts[1]), parsePrice(parts[2])));
 		}
 
@@ -45,11 +34,24 @@ public class FileInputProvider {
 		return scenario;
 	}
 
+	private String[] extractLineParts(String line) {
+		Validate.notBlank(line, "Input line in file cannot be empty");
+		String[] parts = line.split(",");
+
+		Validate.notNull(parts, "A Line in the input file cannot be null");
+		Validate.isTrue(parts.length == 3,
+				"A line in the input file should contain exactly three comma separated parts");
+
+		Validate.notBlank(parts[0], "Customer cannot be empty");
+		Validate.notBlank(parts[1], "Impressions cannot be empty");
+		Validate.notBlank(parts[2], "Campaign Price cannot be empty");
+		return parts;
+	}
+
 	private int parsePrice(String word) {
 		Validate.notBlank(word, "Price cannot be null or empty");
 
 		int price = Integer.valueOf(word.trim());
-
 		Validate.isTrue(price >= 0, "Price cannot be negative");
 
 		return price;

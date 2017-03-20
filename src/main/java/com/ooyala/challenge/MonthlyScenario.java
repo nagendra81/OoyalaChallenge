@@ -24,7 +24,6 @@ public class MonthlyScenario {
 	 * running time by dividing the impressions by its GCD before computing the
 	 * recurrence
 	 * 
-	 * 
 	 */
 	public Map<CustomerCampaign, Integer> computeOptimalSolution() {
 		List<Integer> customerImpressions = extractImpressionsFromCustomers();
@@ -71,14 +70,14 @@ public class MonthlyScenario {
 
 	}
 
-	private Map<CustomerCampaign, Integer> backtraceSolution(int[] dpMemo, List<CustomerCampaign> gcdCustomers,
+	private Map<CustomerCampaign, Integer> backtraceSolution(int[] solutionMemo, List<CustomerCampaign> gcdCustomers,
 			int gcdInventory) {
 
 		Map<CustomerCampaign, Integer> solution = new HashMap<>();
 
 		int inv = gcdInventory;
-		while (inv > 0 && dpMemo[inv] >= 0) {
-			int k = dpMemo[inv];
+		while (inv > 0 && solutionMemo[inv] >= 0) {
+			int k = solutionMemo[inv];
 			increment(solution, gcdCustomers.get(k));
 			inv = inv - gcdCustomers.get(k).getImpressions();
 		}

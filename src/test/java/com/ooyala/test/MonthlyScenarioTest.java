@@ -26,7 +26,7 @@ public class MonthlyScenarioTest {
 
 		String inputFile = new URI(getClass().getResource(input).toString()).getPath();
 		String outputFile = new URI(getClass().getResource(output).toString()).getPath();
-	
+
 		FileInputProvider fip = new FileInputProvider(inputFile);
 		MonthlyScenario scenario = fip.parseInput();
 		String actual = scenario.formatResult(scenario.computeOptimalSolution());

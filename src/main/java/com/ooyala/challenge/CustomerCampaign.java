@@ -25,8 +25,8 @@ public class CustomerCampaign implements Comparable<CustomerCampaign> {
 	}
 
 	/**
-	 * Comparator to compare ratios which uses the fact that 
-	 * a ratio a/b is > c/d iff (a * d) > (b * c)
+	 * Comparator to compare ratios which uses the fact that a ratio a/b is >
+	 * c/d iff (a * d) > (b * c)
 	 */
 	@Override
 	public int compareTo(CustomerCampaign other) {
@@ -38,16 +38,16 @@ public class CustomerCampaign implements Comparable<CustomerCampaign> {
 
 	@Override
 	public boolean equals(Object obj) {
-		if(!(obj instanceof CustomerCampaign)) {
+		if (!(obj instanceof CustomerCampaign)) {
 			return false;
 		}
 		CustomerCampaign other = (CustomerCampaign) obj;
 		return this.name.equals(other.name);
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return this.name.hashCode();
 	}
 
-	}
+}
